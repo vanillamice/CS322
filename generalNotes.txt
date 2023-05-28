@@ -1,0 +1,24 @@
+/*
+pthread_create(*threadId, NULL, *threadFunc, *variablePassed);
+
+The first argument is a pointer to a pthread_t variable in which the thread id of the newly
+created thread will be stored.
+
+2- The second argument is a pointer to a thread attributes object. The attr object can be used to
+set a thread attributes. Set to NULL for the default attributes.
+
+3- The third argument is a pointer to the thread function (the subroutine the thread will be
+executing).
+
+4- The fourth argument is a pointer to a single argument variable that may be passed (by
+reference) to the thread function. Set to NULL if no argument is passed.
+*/
+
+/*semaphores: 
+sem_t semaphoreName -> define semaphore object
+sem_init(pointer to semaphore, value,value) -> initialize semaphore.
+
+sem_wait(&s) -> Decrements the value.
+sem_post(&s) -> Increments the value.
+
+*/
