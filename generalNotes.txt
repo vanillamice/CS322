@@ -16,7 +16,7 @@ reference) to the thread function. Set to NULL if no argument is passed.
 
 /*semaphores: 
 sem_t semaphoreName -> define semaphore object
-sem_init(pointer to semaphore, value,value) -> initialize semaphore.
+sem_init(pointer to semaphore, 0 for threads-1 for processes, number of threads that has access to critical section protected by this s at a time.) -> initialize semaphore.
 
 sem_wait(&s) -> Decrements the value.
 sem_post(&s) -> Increments the value.
